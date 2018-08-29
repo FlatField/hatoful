@@ -49,6 +49,10 @@ a:hover {
   clear: both;
 }
 
+.fixed {
+  overflow: hidden;
+  height: 100%;
+}
 
 /* ==================================
            ↓ ヘッダー ↓

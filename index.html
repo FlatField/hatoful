@@ -57,7 +57,11 @@ responsive: [
 });
 });
 </script>
-
+<script>
+  $(document).on("click", ".drawer-toggle", function() {
+    $('html, body').toggleClass('fixed');
+  });
+</script>
 
 
 <body class="drawer drawer--right">
