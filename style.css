@@ -1,0 +1,372 @@
+@charset "utf-8";
+/* ==================================
+
+           ↓ 初期セレクタ ↓
+================================== */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+       -moz-box-sizing: border-box;
+         -o-box-sizing: border-box;
+        -ms-box-sizing: border-box;
+            box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 1em;
+  font-family: "Hiragino Kaku Gothic ProN","メイリオ", sans-serif;
+  background-color: #faefe0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+}
+
+p, dt, dl {
+  line-height:100%;
+}
+
+li {
+  list-style-type:none;
+}
+
+a:link, a:visited, a:hover {
+  color: #333;
+  text-decoration: none;
+}
+
+a:hover {
+  cursor: pointer;
+  opacity: 1;
+}
+
+.clearfix::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+
+/* ==================================
+           ↓ ヘッダー ↓
+================================== */
+button.drawer-toggle.drawer-hamburger {
+  width: 40px !important;
+    top: -3px !important;
+    right: 3px !important;
+}
+
+.drawer-nav {
+  background-color: #faefe0 !important;
+}
+
+.drawer--right .drawer-nav {
+    top: 60px !important;;
+}
+
+.drawer--right .drawer-hamburger, .drawer--right.drawer-open .drawer-nav, .drawer--right.drawer-open .drawer-navbar .drawer-hamburger {
+    right: 0;
+    top: 60px !important;
+}
+
+.drawer--right.drawer-open .drawer-hamburger {
+    top: 5px !important;
+    right: 3px !important;
+}
+
+.drawer-hamburger {
+  padding: 12px .75rem 30px !important;
+}
+
+.drawer-hamburger-icon, .drawer-hamburger-icon:after, .drawer-hamburger-icon:before {
+  background-color: #fff !important;
+  height: 5px !important;
+}
+
+.drawer-open .drawer-hamburger-icon {
+  background-color: transparent !important;
+}
+
+.drawer-toggle p {
+    position: relative;
+    display: block;
+    z-index: 0;
+    color: #fff;
+    top: 16px;
+    font-size: 12px;
+    margin: 0 auto;
+    letter-spacing: 1px;
+}
+
+.drawer-open p {
+    display: none;
+}
+
+#header {
+  height: 60px;
+  width: 100%;
+  background-color: #275B52;
+  position: fixed;
+  z-index: 5;
+}
+
+.logo {
+  margin-left: 10px;
+}
+
+.logo img {
+    width: 129px;
+    margin: 10px;
+}
+
+@media screen and (min-width: 375px) and (max-width: 480px) {
+  button.drawer-toggle.drawer-hamburger {
+    width: 10%;
+}
+}
+
+
+/* ==================================
+    ↓ allWrapper .top_content ↓
+================================== */
+.allWrapper {
+  width: 100%;
+  padding-top: 60px;
+}
+
+.top_content {
+  height: 210px;
+  width: 100%;
+  background: url(https://hatoful.net/img/common/bg/header_bg2.jpg) 0 0 no-repeat;
+}
+
+.top_container {
+  margin: 0 auto;
+  width: 90%;
+  padding-top: 20px;
+
+}
+
+
+/* ==================================
+ ↓ allWrapper #main 共通 ↓
+================================== */
+#main {
+  width: 100%;
+}
+
+#main h3 {
+  padding: 35px 0 3px;
+  margin-left: 5px;
+  margin-bottom: 18px;
+  border-bottom: solid 2px #555;
+  letter-spacing: 1.5px;
+}
+
+.content_image {
+  width: 48%;
+  display: inline-block;
+  text-align: center;
+}
+
+.content_text {
+  width: 48%;
+  display: inline-block;
+}
+
+
+
+/* ==================================
+ ↓ allWrapper #main .main_slider ↓
+================================== */
+.main_slider {
+  width: 99%;
+  margin: 8px auto;
+  padding: 5px;
+  border: 1px solid #eee;
+  border-radius: 12px;
+}
+
+.slick-dots {
+  display: none !important;
+}
+
+.slick-slider {
+    margin-bottom: 0 !important;
+}
+
+.slick-slide img {
+  border-radius: 12px !important;
+}
+
+
+
+
+/* ==================================
+ ↓ allWrapper #main .ranking-newWrapper ↓
+================================== */
+.rankingWrapper {
+  margin: 0 auto;
+}
+
+.ranking_list {
+  margin-top: 12px;
+  text-align: center;
+}
+
+.ranking_content {
+  margin: 10px 8px 0 8px;
+  width: 100%;
+}
+
+.ranking_content img {
+  width: 100%;
+  max-width: 270px;
+}
+
+.ranking_content p {
+  width: 48%;
+  display: inline-block;
+  padding: 20px 0 0 10px;
+  vertical-align: top;
+}
+
+.new_list {
+  margin-top: 12px;
+  text-align: center;
+}
+
+.new_content {
+  margin: 10px 8px 0 8px;
+  width: 100%;
+}
+
+.new_content img {
+  width: 100%;
+  max-width: 270px;
+}
+
+.new_content p {
+  width: 48%;
+  display: inline-block;
+  padding: 20px 0 0 10px;
+  vertical-align: top;
+}
+
+@media screen and (max-width: 370px) {
+  .ranking_content img {
+  width: 47%;
+  }
+  .ranking_content p {
+  margin: 24px 0 0 0;
+  }
+  .new_content img {
+  width: 47%;
+  }
+  .new_content p {
+  margin: 24px 0 0 0;
+  }
+}
+
+
+
+
+/* ==================================
+             ↓ footer ↓
+================================== */
+#footer {
+  height: auto;
+  width: 100%;
+  background: url(https://hatoful.net/img/common/bg/footer_bg2.gif);
+  margin-top: 30px;
+}
+
+.company_guide {
+  text-align: center;
+  padding: 20px 0 15px;
+}
+
+.company_guide img {
+  width: 98%;
+  height: auto;
+  max-height:145px;
+  max-width: 870px;
+}
+
+.guides {
+  text-align: center;
+}
+
+.guides ul li {
+  display: inline-block;
+  width: 25%;
+  margin-right: 8px;
+}
+
+.guides img {
+  width: 100%;
+  height: auto;
+  max-height: 200px;
+  max-width: 170px;
+}
+
+.end {
+  width: 100%;
+  margin-top: 20px;
+  background-color: #275B52;
+  padding-top: 10px;
+}
+
+.footer_logos {
+  display: block;
+  width: 90%;
+  margin: 0 auto;
+}
+
+.footer_logos p {
+  color: #faefe0;
+  letter-spacing: 1px;
+  line-height: 1.1rem;
+}
+
+.footer_links {
+  width: 100%;
+  margin: 10px auto 0;
+
+}
+
+.footer_links ul li {
+  padding: 10px 20px;
+  border-top: 1px solid #ddd;
+}
+
+.footer_links ul li a {
+  color: #faefe0;
+}
+
+.footer_links ul li:before {
+  display: inline-block;
+  height: 0;
+  border-width: 3px 0 3px 5.2px;
+  border-style: solid;
+  border-color: transparent transparent transparent #ddd;
+  content: "";
+}
+
+@media screen and (min-width: 375px) and (max-width: 480px) {
+  .footer_logos img {
+    width: 25%;
+    max-width: 100px;
+  }
+  .footer_logos p {
+    font-size: 0.8rem;
+  }
+  .footer_links ul li a {
+    color: #faefe0;
+    font-size: 0.8rem;
+}
+}
