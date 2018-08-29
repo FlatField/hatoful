@@ -49,10 +49,6 @@ a:hover {
   clear: both;
 }
 
-.fixed {
-  overflow: hidden;
-  height: 100%;
-}
 
 /* ==================================
            ↓ ヘッダー ↓
@@ -142,7 +138,7 @@ button.drawer-toggle.drawer-hamburger {
   background-color: #faefe0;
 }
 
-/*.top_content {
+.top_content {
   height: 210px;
   width: 100%;
   background: url(https://hatoful.net/img/common/bg/header_bg2.jpg) 0 0 no-repeat;
@@ -153,7 +149,7 @@ button.drawer-toggle.drawer-hamburger {
   width: 90%;
   padding-top: 20px;
 
-}*/
+}
 
 
 /* ==================================
@@ -192,6 +188,8 @@ button.drawer-toggle.drawer-hamburger {
   width: 99%;
   margin: 8px auto;
   padding: 5px;
+  border: 1px solid #eee;
+  border-radius: 12px;
 }
 
 .slick-dots {
