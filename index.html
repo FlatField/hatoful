@@ -297,6 +297,14 @@ responsive: [
  $(document).ready(function() {
    $('.drawer').drawer();
  });
+
+// スクロール停止の処理
+$(window).on('touchmove.noScroll', function(e) {
+    e.preventDefault();
+});
+
+// スクロール停止することを停止する処理
+$(window).off('.noScroll');
 </script>
 <script type="text/javascript" src="https://hatoful.net/slick/slick.js"></script>
 </body>
