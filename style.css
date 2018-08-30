@@ -305,7 +305,11 @@ button.drawer-toggle.drawer-hamburger {
 .guides ul li {
   display: inline-block;
   width: 25%;
-  margin-right: 8px;
+  margin-right: 18px;
+}
+
+.guides ul li:nth-child(3) {
+    margin-right: 0;
 }
 
 .guides img {
@@ -337,12 +341,14 @@ button.drawer-toggle.drawer-hamburger {
 .footer_links {
   width: 100%;
   margin: 10px auto 0;
-
 }
 
 .footer_links ul li {
   padding: 10px 20px;
   border-top: 1px solid #ddd;
+}
+.footer_links ul li:nth-child(3) {
+  padding-bottom: 30px;
 }
 
 .footer_links ul li a {
