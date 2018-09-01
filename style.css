@@ -49,6 +49,11 @@ a:hover {
   clear: both;
 }
 
+.fixed {
+  overflow: auto;
+  height: 100%;
+}
+
 
 /* ==================================
            ↓ ヘッダー ↓
@@ -103,6 +108,10 @@ button.drawer-toggle.drawer-hamburger {
 
 .drawer-open p {
     display: none;
+}
+
+.drawer-brand {
+  text-align: center;
 }
 
 #header {
