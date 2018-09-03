@@ -11,54 +11,38 @@
   <meta name="description" content="|はあとふる|はちょっと贅沢なオンラインショッピングサイトスタッフが足で探しだした厳選の商品をレビューをまじえてオススメします。大量生産品ではなかなか見つからないこだわりの商品は、価格以上の満足感が味わえます。また商品を販売するだけではなく、実際にお料理し、レシピの公開・動画でご紹介することでご購入者の立場に立ったネットショップを目指しております。">
 
   <link rel="canonical" href="http://hatoful.net">
-  <link href="style.css" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="https://hatoful.net/slick/slick.css"/>
-  <link rel="stylesheet" type="text/css" href="https://hatoful.net/slick/slick-theme.css"/>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/top_flexslider.css">
+  <link rel="stylesheet" href="css/cate_flexslider.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.1.0/css/drawer.min.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/iScroll/5.1.3/iscroll.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.1.0/js/drawer.min.js"></script>
   <script src="js/drawer_reset.js" type="text/javascript" charset="utf-8"></script>
-</head>
-<script>
-$(function(){
-$('.slider').slick({
-autoplay:true,
-autoplaySpeed:5000,
-dots:true,
-arrows: false,
-responsive: [
-    {
-      breakpoint: 1024,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        infinite: true,
-        dots: true
-      },
-    },
-    {
-      breakpoint: 600,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-      },
-    },
-    {
-      breakpoint: 480,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        infinite: true,
-        dots: true,
-      },
-    },
-  ]
+
+<script type="text/javascript" charset="utf-8">
+$(function() {
+  $('.top_flexslider').flexslider({
+    animation: "slide",
+    touch: true,
+    directionNav: false
+  });
 });
-});
+// $(function() {
+//   $('.cate_slider').flexslider({
+//     animation: "slide",
+//     touch: true,
+//     slideshow: false,
+//     animationLoop: false,
+//     directionNav: false,
+//     itemWidth: 80,
+//     itemMargin: 5
+//   });
+// });
 </script>
+
+</head>
 
 
 
@@ -80,21 +64,13 @@ responsive: [
         </button>
             <nav class="drawer-nav" role="navigation">
                   <ul class="drawer-menu">
-                      <li><a class="drawer-brand" href="/"><i class="fas fa-home"></i>TOPページへ戻る</a></li>
-                      <li><a class="drawer-menu-item" href="#">メニュー名１</a></li>
-                      <li><a class="drawer-menu-item" href="#">メニュー名２</a></li>
-                      <li><a class="drawer-menu-item" href="#">メニュー名３</a></li>
-                      <li><a class="drawer-menu-item" href="#">メニュー名４</a></li>
-                      <li><a class="drawer-menu-item" href="#">メニュー名５</a></li>
-                      <li><a class="drawer-menu-item" href="#">メニュー名６</a></li>
-                      <li><a class="drawer-menu-item" href="#">メニュー名７</a></li>
-                      <li><a class="drawer-menu-item" href="#">メニュー名８</a></li>
-                      <li><a class="drawer-menu-item" href="#">メニュー名９</a></li>
-                      <li><a class="drawer-menu-item" href="#">メニュー名10</a></li>
-                      <li><a class="drawer-menu-item" href="#">メニュー名11</a></li>
-                      <li><a class="drawer-menu-item" href="#">メニュー名12</a></li>
-                      <li><a class="drawer-menu-item" href="#">メニュー名13</a></li>
-                      <li><a class="drawer-menu-item" href="#">メニュー名14</a></li>
+                      <li><a class="drawer-menu-item" href="/"><span><i class="fas fa-home"></i></span>ショップのトップページへ</a></li>
+                      <li><a class="drawer-menu-item" href="#"><span><i class="fas fa-shopping-cart"></i></span>買い物かごを見る</a></li>
+                      <li><a class="drawer-menu-item" href="#"><span>></span>レシピ動画</a></li>
+                      <li><a class="drawer-menu-item" href="#"><span>></span>メニュー名３</a></li>
+                      <li><a class="drawer-menu-item" href="#"><span>></span>メニュー名４</a></li>
+                      <li><a class="drawer-menu-item" href="#"><span>></span>メニュー名５</a></li>
+                      <li><a class="drawer-menu-item" href="#"><span>></span>メニュー名６</a></li>
                   </ul>
            </nav>
   </section>
@@ -104,7 +80,7 @@ responsive: [
 
 
     <!-- メインコンテンツここから -->
-    <div class="allWrapper" role="main">
+ <div class="allWrapper" role="main">
 
 
         <!-- <div class="top_content">
@@ -114,10 +90,12 @@ responsive: [
         </div> -->
 
 
-        <main id="main">
+    <main id="main">
 
-          <div class="main_slider">
-              <ul class="slider">
+
+
+          <div class="main_slider top_flexslider">
+              <ul class="slides">
                 <li>
                   <a href="https://hatoful.net/html-file/sweets/sweets002.html">
                     <img src="https://hatoful.net/img/page_parts/slide/000.jpg">
@@ -171,6 +149,49 @@ responsive: [
               </ul>
           </div>
 
+
+          <div class="categoryWrapper cate_slider">
+              <h4>カテゴリーから探す</h4>
+              <ul class="slides">
+                <li>
+                  <a href="https://hatoful.net/html-file/sweets/sweets002.html">
+                    <img src="img/001_food.png">
+                  </a>
+                </li>
+                <li>
+                  <a href="https://hatoful.net/html-file/drink/index.html">
+                    <img src="img/002_drink.png">
+                  </a>
+                </li>
+                <li>
+                  <a href="https://hatoful.net/html-file/sweets/index.html">
+                    <img src="img/003_sweets.png">
+                  </a>
+                </li>
+                <li>
+                  <a href="https://hatoful.net/html-file/seasoning/index.html">
+                    <img src="img/004_seasoning.png">
+                  </a>
+                </li>
+                <li>
+                  <a href="https://hatoful.net/html-file/dry/index.html">
+                    <img src="img/005_dry.png">
+                  </a>
+                </li>
+                <li>
+                  <a href="https://hatoful.net/html-file/goods/index.html">
+                    <img src="img/006_goods.png">
+                  </a>
+                </li>
+                <li>
+                  <a href="https://hatoful.net/html-file/gift/index.html">
+                    <img src="img/007_gift.png">
+                  </a>
+                </li>
+              </ul>
+          </div>
+
+
           <div class="rankingWrapper">
               <h3>&ensp;人気商品ランキング</h3>
 
@@ -220,54 +241,78 @@ responsive: [
               </div>
           </div>
 
+
+
           <div class="newWrapper">
-              <h3>&ensp;新着商品<span>健康へのおくりもの</span></h3>
+              <h3>&ensp;新着商品<span>-&ensp;健康へのおくりもの&ensp;-</span></h3>
 
-                  <div class="new_content">
-                       <a href="#" title="">
-                        <div class="content_image">
-                           <img src="https://hatoful.net/img/page_parts/seasoning/seasoning008/seasoning008_285x120.jpg" alt="はあとふる人気No1商品">
-                        </div>
-                        <p>これこれな商品です。</p>
-                      </a>
-                  </div>
+                <div class="new_content">
+                    <a href="#" title="">
+                      <div class="content_days">
+                         <span>2018<br>8/17</span>
+                      </div>
+                      <div class="content_image">
+                          <img src="https://hatoful.net/img/page_parts/seasoning/seasoning008/seasoning008_285x120.jpg" alt="はあとふる人気No1商品">
+                      </div>
+                      <div class="content_text">
+                          <p>これこれな商品です。</p>
+                      </div>
+                    </a>
+                </div>
 
-                  <div class="new_content">
-                       <a href="#" title="">
-                        <div class="content_image">
-                           <img src="https://hatoful.net/img/page_parts/seasoning/seasoning008/seasoning008_285x120.jpg" alt="はあとふる人気No1商品">
-                        </div>
-                        <p>これこれな商品です。</p>
-                      </a>
-                  </div>
+                <div class="new_content">
+                    <a href="#" title="">
+                      <div class="content_days">
+                         <span>2018<br>8/17</span>
+                      </div>
+                      <div class="content_image">
+                          <img src="https://hatoful.net/img/page_parts/seasoning/seasoning008/seasoning008_285x120.jpg" alt="はあとふる人気No1商品">
+                      </div>
+                      <div class="content_text">
+                          <p>これこれな商品です。</p>
+                      </div>
+                    </a>
+                </div>
 
-                  <div class="new_content">
-                       <a href="#" title="">
-                        <div class="content_image">
-                           <img src="https://hatoful.net/img/page_parts/seasoning/seasoning008/seasoning008_285x120.jpg" alt="はあとふる人気No1商品">
-                        </div>
-                        <p>これこれな商品です。</p>
-                      </a>
-                  </div>
+                <div class="new_content">
+                    <a href="#" title="">
+                      <div class="content_days">
+                         <span>2018<br>8/17</span>
+                      </div>
+                      <div class="content_image">
+                          <img src="https://hatoful.net/img/page_parts/seasoning/seasoning008/seasoning008_285x120.jpg" alt="はあとふる人気No1商品">
+                      </div>
+                      <div class="content_text">
+                          <p>これこれな商品です。</p>
+                      </div>
+                    </a>
+                </div>
           </div>
 
-
-          <div class="recommend_list">
-              <!-- おすすめ商品のリスト　スライダーかなあ -->
+          <div class="topicsWrapper">
+              <h4>おしらせ</h4>
+              <div class="topics_content">
+                <ul>
+                  <li>2018/08/14<span>お知らせ</span><br>
+                      <a href="#">8月10日以降のご注文は、8月20日以降の発送となります</a>
+                  </li>
+                  <li>2018/08/07<span>新商品</span><br>
+                      <a href="">新商品○○が入荷いたしました</a>
+                  </li>
+                  <li>2018/08/01<span>在庫切れ</span><br>
+                      <a href="">在庫切れのおしらせ</a>
+                  </li>
+                  <li>2018/07/23<span>新商品</span><br>
+                      <a href="">新商品○○が入荷いたしました</a>
+                  </li>
+                </ul>
+              </div>
           </div>
 
-          <div class="topics">
-              <!-- トピックス、お知らせ -->
-          </div>
-
-          <div class="recipe_videos">
-              <!-- レシピ動画 -->
-          </div>
-
-        </main>
+    </main>
+    <!-- //メインコンテンツここまで -->
 
 
-      <!-- //メインコンテンツここまで -->
 
 
 
@@ -324,11 +369,14 @@ responsive: [
         <!-- //フッターここまで -->
     </div>
 
+
+
+<script type="text/javascript" src="js/jquery.flexslider-min.js"></script>
+
 <script>
  $(document).ready(function() {
    $('.drawer').drawer();
  });
 </script>
-<script type="text/javascript" src="https://hatoful.net/slick/slick.js"></script>
 </body>
 </html>
