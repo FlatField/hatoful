@@ -210,8 +210,8 @@ html[xmlns] .cate_flexslider .slides {
   *display: inline;
 }
 .flex-control-paging li a {
-  width: 11px;
-  height: 11px;
+  width: 8px;
+  height: 8px;
   display: block;
   background: #666;
   background: rgba(0, 0, 0, 0.5);
