@@ -269,7 +269,7 @@ button.drawer-toggle.drawer-hamburger {
 
 .categoryWrapper ul li {
   background-color: #faefe0;
-  padding: 3px 5px 5px;
+  padding: 7px 5px 5px;
   margin: 6px 4px;
   display: inline-block;
   text-align: center;
@@ -278,8 +278,8 @@ button.drawer-toggle.drawer-hamburger {
   border-right: 1px solid #fff;
   border-radius: 7px;
   border-left: 1px solid #fff;
-  width: 55px;
-  height: 55px;
+  width: 65px;
+  height: 65px;
 }
 
 .categoryWrapper ul li img {
